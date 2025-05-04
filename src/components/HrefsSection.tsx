@@ -10,17 +10,17 @@ const items = [
   {
     href: "/portfolio",
     label: "PORTFOLIO",
-    img: "/hero/3.jpg",
+    img: "/hero/3.webp",
   },
   {
     href: "/proces",
     label: "PROCES",
-    img: "/hero/2.jpg",
+    img: "/hero/2.webp",
   },
   {
     href: "/produkty",
     label: "PRODUKTY",
-    img: "/hero/4.jpg",
+    img: "/hero/12.webp",
   },
 ];
 

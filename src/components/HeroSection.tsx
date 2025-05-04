@@ -63,7 +63,7 @@ const HeroSection = () => {
   useEffect(() => {
     for (let i = 1; i <= IMAGE_COUNT; i++) {
       const img = new window.Image();
-      img.src = `/hero/${i}.jpg`;
+      img.src = `/hero/${i}.webp`;
     }
   }, []);
 
@@ -138,7 +138,7 @@ const HeroSection = () => {
       </motion.h1>
       {/* Main visible image */}
       <img
-        src={`/hero/${currentIndex}.jpg`}
+        src={`/hero/${currentIndex}.webp`}
         alt={`Hero image ${currentIndex}`}
         className="absolute h-[400px] object-cover"
         style={{
@@ -157,7 +157,7 @@ const HeroSection = () => {
       {/* Buffer image, hidden until ready */}
       <img
         ref={bufferRef}
-        src={`/hero/${nextIndex}.jpg`}
+        src={`/hero/${nextIndex}.webp`}
         alt=""
         className="absolute h-[400px]  object-cover pointer-events-none"
         style={{

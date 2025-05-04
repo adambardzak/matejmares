@@ -7,7 +7,7 @@ const leftText1 = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pell
 
 const leftText2 = `Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.\n\nUt enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.\n\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`;
 
-const imageUrl = "/hero/16.jpg";
+const imageUrl = "/hero/16.webp";
 
 const fadeIn = {
   hidden: { opacity: 0 },
