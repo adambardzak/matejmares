@@ -9,10 +9,10 @@ const IMAGE_COUNT = 16;
 const IMAGE_SIZE = 300;
 
 const HERO_IMAGE_AREA = {
-  top: 120, // px from top
+  top: 260, // px from top
   height: 350, // px
   left: () => window.innerWidth * 0.25, // 25% from left
-  width: () => window.innerWidth * 0.5, // 50% of window width
+  width: () => window.innerWidth * 0.4, // 50% of window width
 };
 
 const headingParts = [
