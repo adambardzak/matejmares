@@ -50,8 +50,6 @@ const Navbar = () => {
           initial={{ x: -40, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ type: "spring", stiffness: 120, damping: 12 }}
-          className="text-2xl font-bold tracking-tight select-none"
-          style={{ fontFamily: "Arimo, Arial, sans-serif" }}
           src="/logo.svg"
           alt="Logo"
           width={40}

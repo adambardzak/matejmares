@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import Highlighted from "./Highlighted";
 import clsx from "clsx";
 
 const IMAGE_COUNT = 16;
@@ -107,6 +106,7 @@ const HeroSection = () => {
         style={{
           color: "#fff",
           mixBlendMode: "difference",
+          fontFamily: "var(--font-nunito)"
         }}
         variants={containerVariants}
         initial="hidden"
@@ -114,24 +114,21 @@ const HeroSection = () => {
       >
         {headingParts.map((part) => {
           const words = part.content.split(" ");
-          const WordWrapper = part.highlight ? Highlighted : "span";
           return (
             <span key={part.key} className="inline-block mr-2">
-              <WordWrapper>
-                {words.map((word, idx) => (
-                  <motion.span
-                    key={word + idx}
-                    variants={wordVariants}
-                    className={clsx(
-                      "inline-block mr-2",
-                      part.highlight && "underline"
-                    )}
-                    style={{ transformOrigin: "bottom" }}
-                  >
-                    {word}
-                  </motion.span>
-                ))}
-              </WordWrapper>
+              {words.map((word, idx) => (
+                <motion.span
+                  key={word + idx}
+                  variants={wordVariants}
+                  className={clsx(
+                    "inline-block mr-2",
+                    part.highlight && "underline"
+                  )}
+                  style={{ transformOrigin: "bottom" }}
+                >
+                  {word}
+                </motion.span>
+              ))}
             </span>
           );
         })}
