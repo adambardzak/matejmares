@@ -44,7 +44,6 @@ const Navbar = () => {
       className="fixed top-0 left-0 w-full z-30 bg-white/80 backdrop-blur-md py-3 px-6 flex items-center justify-between font-sans"
       style={{ y: 0 }}
     >
-      {/* Left: Logo + Nav Links */}
       <div className="flex items-center gap-10">
         <motion.img
           initial={{ x: -40, opacity: 0 }}
