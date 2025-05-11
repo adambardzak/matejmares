@@ -41,7 +41,7 @@ const Navbar = () => {
     <motion.nav
       animate={controls}
       transition={{ type: "spring", stiffness: 300, damping: 30 }}
-      className="fixed top-0 left-0 w-full z-30 bg-white/80 backdrop-blur-md border-b border-black py-3 px-6 flex items-center justify-between font-sans"
+      className="fixed top-0 left-0 w-full z-30 bg-white/80 backdrop-blur-md py-3 px-6 flex items-center justify-between font-sans"
       style={{ y: 0 }}
     >
       {/* Left: Logo + Nav Links */}

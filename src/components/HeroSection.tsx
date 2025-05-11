@@ -106,7 +106,7 @@ const HeroSection = () => {
         style={{
           color: "#fff",
           mixBlendMode: "difference",
-          fontFamily: "var(--font-nunito)"
+          fontFamily: "var(--font-raleway)",
         }}
         variants={containerVariants}
         initial="hidden"
