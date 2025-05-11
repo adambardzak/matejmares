@@ -16,15 +16,16 @@ function Footer() {
         {/* Top row */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
-          <span className="text-2xl font-bold tracking-tight select-none" style={{ fontFamily: 'Arimo, Arial, sans-serif' }}>
-            MM
-          </span>
+          <img src="/logo.svg" alt="Logo" width={40} height={40} />
           {/* Nav */}
           <nav>
             <ul className="flex flex-wrap gap-6 text-base font-medium justify-center">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="hover:underline underline-offset-4 transition-all">
+                  <Link
+                    href={link.href}
+                    className="hover:underline underline-offset-4 transition-all"
+                  >
                     {link.label}
                   </Link>
                 </li>
@@ -33,8 +34,18 @@ function Footer() {
           </nav>
           {/* Contact */}
           <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4 text-base">
-            <a href="mailto:info@example.com" className="hover:underline underline-offset-4">info@example.com</a>
-            <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:underline underline-offset-4">
+            <a
+              href="mailto:info@example.com"
+              className="hover:underline underline-offset-4"
+            >
+              info@example.com
+            </a>
+            <a
+              href="https://instagram.com/yourprofile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 hover:underline underline-offset-4"
+            >
               <FiInstagram className="inline-block text-lg" /> Instagram
             </a>
           </div>
@@ -45,9 +56,13 @@ function Footer() {
         <div className="flex flex-wrap justify-center items-center gap-2 text-xs text-black/50">
           <span>2025 všechna práva vyhrazena</span>
           <span>·</span>
-          <Link href="/cookies" className="hover:underline">Cookies</Link>
+          <Link href="/cookies" className="hover:underline">
+            Cookies
+          </Link>
           <span>·</span>
-          <Link href="/gdpr" className="hover:underline">GDPR</Link>
+          <Link href="/gdpr" className="hover:underline">
+            GDPR
+          </Link>
           <span>·</span>
           <span>IČO: 12345678</span>
         </div>

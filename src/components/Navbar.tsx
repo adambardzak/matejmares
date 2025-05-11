@@ -46,15 +46,17 @@ const Navbar = () => {
     >
       {/* Left: Logo + Nav Links */}
       <div className="flex items-center gap-10">
-        <motion.div
+        <motion.img
           initial={{ x: -40, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ type: "spring", stiffness: 120, damping: 12 }}
           className="text-2xl font-bold tracking-tight select-none"
           style={{ fontFamily: "Arimo, Arial, sans-serif" }}
-        >
-          MM
-        </motion.div>
+          src="/logo.svg"
+          alt="Logo"
+          width={40}
+          height={40}
+        />
         <motion.ul
           className="flex gap-8 text-lg font-medium"
           initial="hidden"
