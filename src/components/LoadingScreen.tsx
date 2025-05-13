@@ -43,7 +43,7 @@ export default function LoadingScreen() {
               transition={{
                 duration: 1.2,
                 ease: [0.22, 1, 0.36, 1],
-                // delay: 0.1,
+                delay: 0.1,
               }}
               className="flex items-center justify-center bg-black w-1/6 h-full"
             />
@@ -53,7 +53,7 @@ export default function LoadingScreen() {
               transition={{
                 duration: 1.2,
                 ease: [0.22, 1, 0.36, 1],
-                // delay: 0.3,
+                delay: 0.3,
               }}
               className="flex items-center justify-center bg-black w-1/6 h-full"
             />
@@ -63,7 +63,7 @@ export default function LoadingScreen() {
               transition={{
                 duration: 1.2,
                 ease: [0.22, 1, 0.36, 1],
-                // delay: 0.5,
+                delay: 0.5,
               }}
               className="flex items-center justify-center bg-black w-1/6 h-full"
             />
@@ -73,7 +73,7 @@ export default function LoadingScreen() {
               transition={{
                 duration: 1.2,
                 ease: [0.22, 1, 0.36, 1],
-                // delay: 0.7,
+                delay: 0.7,
               }}
               className="flex items-center justify-center bg-black w-1/6 h-full"
             />
@@ -83,7 +83,7 @@ export default function LoadingScreen() {
               transition={{
                 duration: 1.2,
                 ease: [0.22, 1, 0.36, 1],
-                // delay: 0.9,
+                delay: 0.9,
               }}
               className="flex items-center justify-center bg-black w-1/6 h-full"
             />
@@ -93,7 +93,7 @@ export default function LoadingScreen() {
               transition={{
                 duration: 1.2,
                 ease: [0.22, 1, 0.36, 1],
-                // delay: 1.1,
+                delay: 1.1,
               }}
               className="flex items-center justify-center bg-black w-1/6 h-full"
             />
