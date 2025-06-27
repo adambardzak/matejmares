@@ -9,7 +9,7 @@ export default function LoadingScreen() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -22,7 +22,7 @@ export default function LoadingScreen() {
           <motion.div
             initial={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="fixed inset-0 z-50 bg-white"
           />
 
@@ -31,9 +31,9 @@ export default function LoadingScreen() {
             initial={{ y: -1000 }}
             animate={{ y: 0 }}
             transition={{
-              duration: 1.2,
+              duration: 0.8,
               ease: [0.22, 1, 0.36, 1],
-              delay: 0.2,
+              delay: 0.1,
             }}
             className="flex flex-row w-full h-full fixed top-0 left-0 z-50"
           >
@@ -41,9 +41,9 @@ export default function LoadingScreen() {
               initial={{ rotateY: 0 }}
               exit={{ rotateY: 90 }}
               transition={{
-                duration: 1.2,
+                duration: 0.8,
                 ease: [0.22, 1, 0.36, 1],
-                delay: 0.1,
+                delay: 0.05,
               }}
               className="flex items-center justify-center bg-black w-1/6 h-full"
             />
@@ -51,9 +51,9 @@ export default function LoadingScreen() {
               initial={{ rotateY: 0 }}
               exit={{ rotateY: 90 }}
               transition={{
-                duration: 1.2,
+                duration: 0.8,
                 ease: [0.22, 1, 0.36, 1],
-                delay: 0.3,
+                delay: 0.15,
               }}
               className="flex items-center justify-center bg-black w-1/6 h-full"
             />
@@ -61,9 +61,9 @@ export default function LoadingScreen() {
               initial={{ rotateY: 0 }}
               exit={{ rotateY: 90 }}
               transition={{
-                duration: 1.2,
+                duration: 0.8,
                 ease: [0.22, 1, 0.36, 1],
-                delay: 0.5,
+                delay: 0.25,
               }}
               className="flex items-center justify-center bg-black w-1/6 h-full"
             />
@@ -71,9 +71,9 @@ export default function LoadingScreen() {
               initial={{ rotateY: 0 }}
               exit={{ rotateY: 90 }}
               transition={{
-                duration: 1.2,
+                duration: 0.8,
                 ease: [0.22, 1, 0.36, 1],
-                delay: 0.7,
+                delay: 0.35,
               }}
               className="flex items-center justify-center bg-black w-1/6 h-full"
             />
@@ -81,9 +81,9 @@ export default function LoadingScreen() {
               initial={{ rotateY: 0 }}
               exit={{ rotateY: 90 }}
               transition={{
-                duration: 1.2,
+                duration: 0.8,
                 ease: [0.22, 1, 0.36, 1],
-                delay: 0.9,
+                delay: 0.45,
               }}
               className="flex items-center justify-center bg-black w-1/6 h-full"
             />
@@ -91,9 +91,9 @@ export default function LoadingScreen() {
               initial={{ rotateY: 0 }}
               exit={{ rotateY: 90 }}
               transition={{
-                duration: 1.2,
+                duration: 0.8,
                 ease: [0.22, 1, 0.36, 1],
-                delay: 1.1,
+                delay: 0.55,
               }}
               className="flex items-center justify-center bg-black w-1/6 h-full"
             />

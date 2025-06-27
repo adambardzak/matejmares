@@ -36,7 +36,8 @@ const containerVariants = {
   hidden: {},
   visible: {
     transition: {
-      staggerChildren: 0.18,
+      staggerChildren: 0.1,
+      delayChildren: 1.8,
     },
   },
 };
@@ -47,7 +48,7 @@ const wordVariants = {
     scaleY: 1,
     opacity: 1,
     originY: 1,
-    transition: { duration: 0.5, ease: [0.4, 0, 0.2, 1] },
+    transition: { duration: 0.3, ease: [0.4, 0, 0.2, 1] },
   },
 };
 
@@ -57,6 +58,16 @@ const HeroSection = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [showBuffer, setShowBuffer] = useState(false);
   const bufferRef = useRef<HTMLImageElement>(null);
+  const [startImageAnimation, setStartImageAnimation] = useState(false);
+
+  // Start image animation after loading screen
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setStartImageAnimation(true);
+    }, 1800);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   // Preload all images
   useEffect(() => {
@@ -68,6 +79,8 @@ const HeroSection = () => {
 
   // Prepare the next image in a hidden buffer
   useEffect(() => {
+    if (!startImageAnimation) return; // Don't start until loading screen is done
+
     const interval = setInterval(() => {
       // Restrict random position to the defined area
       const areaLeft = HERO_IMAGE_AREA.left();
@@ -93,10 +106,10 @@ const HeroSection = () => {
       } else if (bufferImg) {
         bufferImg.onload = handleLoad;
       }
-    }, 1000);
+    }, 500);
 
     return () => clearInterval(interval);
-  }, [nextIndex]);
+  }, [nextIndex, startImageAnimation]);
 
   return (
     <div className="relative w-full h-screen overflow-hidden flex flex-col items-end justify-center">

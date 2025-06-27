@@ -8,6 +8,7 @@ import { FiShoppingCart } from "react-icons/fi";
 const navLinks = [
   { href: "/", label: "Domů" },
   { href: "/produkty", label: "Produkty" },
+  { href: "/proces", label: "Proces" },
   { href: "/portfolio", label: "Portfolio" },
   { href: "/kontakt", label: "Kontakt" },
 ];
